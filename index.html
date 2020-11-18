@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+	<h1><u>REGISTRATION FORM</u></h2>
+
+	<form id="form" onsubmit="return validate()">
+		<div>
+		  <span> First name </span>
+			<input type="text" name="fname" required />
+    </div>
+			<br>
+		<div>
+			<span> Last name </span>
+			<input type="text" name="lname" required />
+    </div>
+			<br>
+    <div>
+			<span> Email </span>
+			<input type="email" name="email" />
+    </div>   
+      <br>   
+		<div>
+			<span> Mobile no </span>
+		  <input type="number" name="mobile" />
+    </div>
+      <br>
+    <div>  
+			<span> Address </span>
+			<input type="text" name="address" required />
+    </div>
+			<br>
+	
+		<div>
+		  <span> City </span>
+		  <input type="text" name="city" />
+    </div>
+			<br>
+		<div>
+		  <span> State </span>
+		  <input type="text" name="city" />
+    </div>
+			<br>
+    <div>
+			<span> Country </span>
+			<input type="text" name="country" />
+    </div>
+			<br>
+		<div>
+		 	<span> Pin Code </span>
+			<input type="text" name="code" />
+    </div>
+				<br>
+    <div>
+			<span> D.O.B. </span>
+			<input type="date" name="dob" />
+    </div>
+			<br>
+		<div>
+			<span>Gender</span>
+				<select name="gender" id="">
+        <option value="male"> Male </option>
+        <option value="female"> Female </option>
+        <option value="other"> Do not Prefer to mention </option>
+      </select>
+	  </div>
+			<br>
+		<div>
+				<span> LinkedIn </span>
+				<input type="url" name="linkedin" />
+    </div>
+   		<br>
+		<div>
+			<span> Github Url </span>
+			<input type="url" name="github" />
+    </div>
+				<br>
+	<button type="submit">SUBMIT</button>
+	</form>
+
+	<div id="error"></div>
+</div>
+
+  </body>
+</html>
